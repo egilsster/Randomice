@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:700,400)
+@import url(https://fonts.googleapis.com/css?family=Exo:400,100,500,700)
+
+$exo: 'Exo', sans-serif
+$roboto: 'Roboto', sans-serif
+
+$display-width: 375px
+$display-height: 667px
+
+$main-purple: #9D0FE6
+$secondary-purple: rgb(147, 12, 232)
+$accent-color: rgb(135, 0, 255)
+$main-blue: rgb(110, 12, 232)
+$secondary-blue: rgb(107, 24, 255)
+
+$main-dark: #434343
+
+body
+    font-family: $exo
+    font-weight: 300
+
+
+.display
+    width: $display-width
+    height: $display-height
+    border: 1px solid black
+    margin-left: auto
+    margin-right: auto
+
+.row
+    padding: 10px
+
+.col-xs-6
+    font-size: 16pt
+    font-family: $roboto
+    font-weight: 700
+
+.menubar
+    background-color: $main-purple
+    color: white
+    height: 8%
+
+.right
+    text-align: right
+
+.brand
+    width: 20pt
+
+.cover
+    height: 27%
+    background: url("../images/cover.jpg")
+    border-bottom: 2px solid $accent-color
+    z-index: 5
+
+
+
+.circle
+    height: 6em
+    width: 6em
+    border: 2px solid $accent-color
+    border-radius: 50%
+    background-image: url("http://www.joshbrewsterphotography.com/365/wp-content/uploads/2011/03/cool-guy.jpg")
+    background-size: 100%
+    margin-left: 1.250em
+    margin-top: -1.5em
+    position: absolute
+
+.main-body
+    z-index: -2
+    background-color: $main-dark
+    height: 65%
+    color: white
+
+.name
+    margin-left: 7em
+    padding-top: 0.313em
+    font-weight: 500
+    font-size: 12pt
+
+.user-input
+    width: 60%
+    margin-top: 20%
+    margin-left: auto
+    margin-right: auto
+
+.slider
+    margin-bottom: 70px
+
+.menu-btn
+    background-color: $main-purple
+    font-size: 20pt
+    padding: 0
+    margin-top: -3px
+
+
+.main-btn
+    background-color: $main-purple
+    font-size: 24pt
+    margin: 0 auto
+    height: 80px
+    width: 100%
+
