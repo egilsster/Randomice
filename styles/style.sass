@@ -7,6 +7,11 @@ $roboto: 'Roboto', sans-serif
 $display-width: 375px
 $display-height: 667px
 
+$menu-bar-height: 55px
+$cover-photo-height: 220px
+$main-body-height: 667px - ($menu-bar-height + $cover-photo-height)
+
+
 $main-purple: #9D0FE6
 $secondary-purple: rgb(147, 12, 232)
 $accent-color: rgb(135, 0, 255)
@@ -32,13 +37,12 @@ body
 
 .col-xs-6
     font-size: 16pt
-    font-family: $roboto
     font-weight: 700
 
 .menubar
     background-color: $main-purple
     color: white
-    height: 8%
+    height: 55px
 
 .right
     text-align: right
@@ -46,30 +50,36 @@ body
 .brand
     width: 20pt
 
-.cover
-    height: 27%
-    background: url("../images/cover.jpg")
+.cover_image
+    background-image: url("../images/cover.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    //height: 27%
+    height: 220px
     border-bottom: 2px solid $accent-color
-    z-index: 5
 
-
-
-.circle
+.profile_image
+    background-image: url("../images/person.jpg")
+    background-size: cover
+    background-repeat: no-repeat
     height: 6em
     width: 6em
     border: 2px solid $accent-color
     border-radius: 50%
-    background-image: url("http://www.joshbrewsterphotography.com/365/wp-content/uploads/2011/03/cool-guy.jpg")
-    background-size: 100%
     margin-left: 1.250em
-    margin-top: -1.5em
+    margin-top: -2.5em
     position: absolute
 
 .main-body
-    z-index: -2
-    background-color: $main-dark
-    height: 65%
+    background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url("../images/background.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    height: 392px
     color: white
+
+
+.dark_layer
+    background-color: $main-dark
 
 .name
     margin-left: 7em

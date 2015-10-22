@@ -16,13 +16,12 @@ body {
 
 .col-xs-6 {
   font-size: 16pt;
-  font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
 .menubar {
   background-color: #9D0FE6;
   color: white;
-  height: 8%; }
+  height: 55px; }
 
 .right {
   text-align: right; }
@@ -30,28 +29,34 @@ body {
 .brand {
   width: 20pt; }
 
-.cover {
-  height: 27%;
-  background: url("../images/cover.jpg");
-  border-bottom: 2px solid #8700ff;
-  z-index: 5; }
+.cover_image {
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 220px;
+  border-bottom: 2px solid #8700ff; }
 
-.circle {
+.profile_image {
+  background-image: url("../images/person.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 6em;
   width: 6em;
   border: 2px solid #8700ff;
   border-radius: 50%;
-  background-image: url("http://www.joshbrewsterphotography.com/365/wp-content/uploads/2011/03/cool-guy.jpg");
-  background-size: 100%;
   margin-left: 1.25em;
-  margin-top: -1.5em;
+  margin-top: -2.5em;
   position: absolute; }
 
 .main-body {
-  z-index: -2;
-  background-color: #434343;
-  height: 65%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 392px;
   color: white; }
+
+.dark_layer {
+  background-color: #434343; }
 
 .name {
   margin-left: 7em;
