@@ -42,6 +42,12 @@ body {
   height: 220px;
   border-bottom: 2px solid #8700ff; }
 
+.paragliding_image {
+  background-size: cover;
+  background: url("../images/pg_skogarfoss.JPG") no-repeat;
+  height: 220px;
+  border-bottom: 2px solid #8700ff; }
+
 .profile_image {
   background-image: url("../images/person.jpg");
   background-size: cover;
