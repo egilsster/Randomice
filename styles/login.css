@@ -1,6 +1,5 @@
-@import "compass/css3";
-
 @import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+
 div.social-wrap button {
     padding-right: 45px;
     height: 40px;
@@ -12,35 +11,37 @@ div.social-wrap button {
     background-repeat: no-repeat;
     border-radius: 4px;
     color: white;
-    font-family:"Merriweather Sans", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     font-size: 14px;
     margin-bottom: 15px;
-    width: 205px;
     border-bottom: 2px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    box-shadow: 0 4px 2px -2px gray;
-    text-shadow: rgba(0, 0, 0, .5) -1px -1px 0;
 }
+
 button#facebook {
     border-color: #2d5073;
     background-color: #3b5998;
     background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
 }
+
 button#twitter {
     border-color: #007aa6;
     background-color: #008cbf;
     background-image: url(https://twitter.com/images/resources/twitter-bird-white-on-blue.png);
 }
+
 button#googleplus {
-    border-color: #111;
+    border-color: rgba(178, 7, 22, 0.87);
     background-color: rgba(178, 7, 22, 0.87);
-    text-shadow: #333 -1px -1px 0;
-    background-image:url(http://i.tinyuploads.com/KBZc6n.png);
+    /*background-image: url(http://i.tinyuploads.com/KBZc6n.png);*/
+    width: 200px;
 }
+
 div.social-wrap button:active {
     background-color: #222;
 }
+
 div.social-wrap.b button {
     padding-right: 45px;
     height: 35px;
@@ -52,40 +53,41 @@ div.social-wrap.b button {
     background-repeat: no-repeat, repeat;
     border-radius: 4px;
     color: white;
-    font-family:"Merriweather Sans", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     font-size: 14px;
     margin-bottom: 15px;
-    width: 205px;
     border-bottom: 2px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    box-shadow: 0 4px 2px -2px gray;
-    text-shadow: rgba(0, 0, 0, .4) -1px -1px 0;
 }
+
 div.social-wrap.b {
 }
+
 div.social-wrap.b > .googleplus {
     background-size: 30px 30px, cover;
-    background-image: url(http://dl.dropbox.com/u/109135764/gplus.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));
-;
+    background-image: url(http://dl.dropbox.com/u/109135764/gplus.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));;
 }
+
 div.social-wrap.b > .facebook {
     background: url(http://dl.dropbox.com/u/109135764/facebookf.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
     background-size: 25px 25px, cover;
     background-position: 170px center, center center;
     background-repeat: no-repeat, repeat;
 }
+
 div.social-wrap.b > .twitter {
-    background-image: url(http://dl.dropbox.com/u/109135764/twitterbird.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));
-;
+    background-image: url(http://dl.dropbox.com/u/109135764/twitterbird.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));;
 }
+
 div.social-wrap.b button em {
     font-size: 18px;
     letter-spacing: 1px;
-    font-family:"Times New Roman";
+    font-family: "Times New Roman";
     margin-right: 4px;
     margin-left: 4px;
 }
+
 div.social-wrap.c button {
     padding-left: 35px;
     padding-right: 0px;
@@ -98,72 +100,82 @@ div.social-wrap.c button {
     background-repeat: no-repeat, repeat;
     border-radius: 4px;
     color: white;
-    font-family:"Merriweather Sans", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     font-size: 14px;
     margin-bottom: 15px;
-    width: 205px;
     border-bottom: 2px solid transparent;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
-    box-shadow: 0 4px 2px -2px gray;
-    text-shadow: rgba(0, 0, 0, .4) -1px -1px 0;
 }
+
 div.social-wrap.c {
 }
+
 div.social-wrap.c > .googleplus {
     background-size: 30px 30px, cover;
-    background-image: url(http://dl.dropbox.com/u/109135764/gplus.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));
-;
+    background-image: url(http://dl.dropbox.com/u/109135764/gplus.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));;
 }
+
 div.social-wrap.c > .facebook {
     background: url(http://dl.dropbox.com/u/109135764/facebookf.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
     background-size: 25px 25px, cover;
     background-position: 10px center, center center;
     background-repeat: no-repeat, repeat;
 }
+
 div.social-wrap.c > .twitter {
-    background-image: url(http://dl.dropbox.com/u/109135764/twitterbird.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));
-;
+    background-image: url(http://dl.dropbox.com/u/109135764/twitterbird.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));;
 }
+
 div.social-wrap.c button em {
     font-size: 18px;
     letter-spacing: 1px;
-    font-family:"Times New Roman";
+    font-family: "Times New Roman";
     margin-right: 4px;
     margin-left: 4px;
 }
+
 ul.sm-wrap {
     list-style-type: none;
     padding: 0px;
 }
+
 ul.sm-wrap li {
-    font-family:"Helvetica", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 11px;
     margin-bottom: 10px;
     padding-left: 20px;
     background-size: 15px 15px;
     background-repeat: no-repeat;
 }
+
 ul.sm-wrap li#facebook-sm {
     background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
 }
+
 ul.sm-wrap li#twitter-sm {
-    background-image:url(https://twitter.com/images/resources/twitter-bird-white-on-blue.png);
+    background-image: url(https://twitter.com/images/resources/twitter-bird-white-on-blue.png);
 }
+
 ul.sm-wrap li#gplus-sm {
     background-image: url(http://i.tinyuploads.com/KBZc6n.png);
 }
 
-ul.sm-wrap a{
+ul.sm-wrap a {
     text-decoration: none;
 }
-.buttonsLogin
-{
-    margin-left: 81px;
-    margin-top: 166px;
+
+.buttonsLogin {
+    width: 205px;
+    margin: 0 auto;
+    padding-top: 200px;
 }
-.login-image{
-    background-image: url("../images/loginMynd.jpg");
+
+.login-image {
+    background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url("../images/adventure.jpg");
+    -webkit-background-size: cover;
     background-size: cover;
-    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 612px;
 }
