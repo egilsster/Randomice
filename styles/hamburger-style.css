@@ -1,0 +1,136 @@
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+/**
+ * Create the slider bar
+ */
+.checkboxOne {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    margin: 20px 80px;
+    position: relative;
+    border-radius: 3px;
+}
+
+/**
+ * Create the slider from the label
+ */
+.checkboxOne label {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+
+    background: #ccc;
+}
+
+/**
+ * Move the slider in the correct position if the checkbox is clicked
+ */
+.checkboxOne input[type=checkbox]:checked + label {
+    left: 27px;
+}
+
+/*******menu-date******************************************/
+
+
+input[type=date]{
+    color: black;
+    padding-left: 1em;
+    margin-bottom: 0.2em;
+    width: 100%;
+}
+
+/*******the menu******************************/
+
+.cbp-spmenu {
+    font-family: "Exo", sans-serif;
+    background-color: #9D0FE6;
+    position: fixed;
+}
+
+.cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+    border: 0.1em solid white;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+    width: 15em;
+    top: 0;
+    z-index: 1000;
+}
+
+.shortMenu {
+    height:4em;
+}
+
+.cbp-spmenu-vertical a {
+    height: 5em;
+    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+}
+
+.cbp-spmenu-right {
+    right: 18em;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 55.1875em){
+
+    .cbp-spmenu-horizontal {
+        font-size: 75%;
+        height: 110px;
+    }
+
+    .cbp-spmenu-top {
+        top: -110px;
+    }
+
+    .cbp-spmenu-bottom {
+        bottom: -110px;
+    }
+
+}
+
+@media screen and (max-height: 26.375em){
+
+    .cbp-spmenu-vertical {
+        font-size: 90%;
+        width: 190px;
+    }
+    .cbp-spmenu-right {
+        right: -190px;
+    }
+}

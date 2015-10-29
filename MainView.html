@@ -7,6 +7,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/hamburger-style.css">
+    <script src="scripts/hamburger.js"></script>
 </head>
 <body>
     <div class="display">
@@ -17,10 +19,37 @@
                     Randomice
                 </div>
                 <div class="col-xs-6 right">
-                    <button class="btn menu-btn">&#9776;</button>
+                    <button class="btn menu-btn" onclick="hamburgerShow()">&#9776;</button>
                 </div>
+
             </div>
         </div>
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="hamburgerMenu" style="display:none">
+           <div class="shortMenu">
+                <a href="#">Walk
+                    <div class="checkboxOne">
+                        <input type="checkbox" value="1" id="checkboxOneInput" class="check" name="" />
+                        <label for="checkboxOneInput"></label>
+                    </div>
+                </a>
+            </div>
+            <a href="#">Drive
+                <div class="checkboxOne">
+                    <input type="checkbox" value="1" id="checkboxOneInput2" class="check" name="" />
+                    <label for="checkboxOneInput2"></label>
+                </div>
+            </a>
+            <a href="#">Date<input type="date" class="hamburgerDate" name="date">
+                            <input type="date" class="hamburgerDate" name="date"></a>
+            <a href="#">Price
+                <section class="range-slider">
+                    <span class="rangeValues"></span>
+                    <input value="0" min="0" max="10000" step="500" type="range">
+                    <input value="10000" min="0" max="10000" step="500" type="range">
+                </section>
+                <!--Rest of code is here->  http://stackoverflow.com/questions/4753946/html5-form-slider-with-two-inputs-possible -->
+            </a>
+        </nav>
 
         <div class="cover">
             <div class="cover_image"></div>
@@ -35,8 +64,6 @@
             <div class="user-input">
                 <label for="scale">How extreme are you?</label>
                 <input id="scale" type="range" class="slider" name="scale" min="0" max="2">
-
-
 
                 <button type="button" class="btn main-btn">Randomice</button>
             </div>
