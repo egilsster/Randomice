@@ -9,7 +9,8 @@ body {
   height: 667px;
   border: 1px solid black;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: white}
 
 .row {
   padding: 10px; }
@@ -172,4 +173,18 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #a91ef0;
+}
+
+.loading-background{
+  background: #9d0fe6;
+  height: inherit;
+}
+h2{
+  margin: auto;
+  text-align: center;
+  padding-top: 1em;
+}
+.loading-image{
+  margin-left: 124px;
+  margin-top: 181px;
 }
