@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RandoMice</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Exo:500' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+
+        var degrees = 0;
+        function rotateAnimation(el,speed){
+            var elem = document.getElementById(el);
+            if(navigator.userAgent.match("Chrome")){
+                elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+            } else if(navigator.userAgent.match("Firefox")){
+                elem.style.MozTransform = "rotate("+degrees+"deg)";
+            } else if(navigator.userAgent.match("MSIE")){
+                elem.style.msTransform = "rotate("+degrees+"deg)";
+            } else if(navigator.userAgent.match("Opera")){
+                elem.style.OTransform = "rotate("+degrees+"deg)";
+            } else {
+                elem.style.transform = "rotate("+degrees+"deg)";
+            }
+            setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+            degrees++;
+            if(degrees > 359){
+                location.href = "login.html";
+            }
+            if(degrees < 301){
+                var n = parseInt(degrees/3);
+
+                document.getElementById("status").innerHTML = "Loading("+n+"%)";
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div class="display">
+    <div class="loading-background">
+        <h2>RandomMice</h2>
+
+        <div class="loading-image">
+            <img id="img1" src="images/mouse.png" height="110" width="110">
+            <script type="text/javascript">rotateAnimation("img1", 8);</script>
+            <h4 style="width:200px;" id="status"></h4>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
