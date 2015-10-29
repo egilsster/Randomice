@@ -179,3 +179,9 @@ ul.sm-wrap a {
     background-position: center;
     height: 612px;
 }
+
+.login-btn a, .login-btn:hover a, .login-btn:active a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
