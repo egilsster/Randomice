@@ -98,6 +98,12 @@ body {
   height: 220px;
   border-bottom: 2px solid #8700ff; }  
 
+.gokart_image {
+  background-size: cover;
+  background: url("../images/gokart.jpg") no-repeat;
+  height: 220px;
+  border-bottom: 2px solid #8700ff; }  
+
 .bowling_image {
     background: url("../images/bowling_background.jpg") no-repeat;
     background-size: cover;
