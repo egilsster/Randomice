@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/hamburger-style.css">
-
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
     <script src="scripts/hamburger.js"></script>
-
+    <script src="scripts/jquery-2.1.4.js"></script>
+    <script src="scripts/random.js"></script>
 </head>
 <body>
     <div class="col-xs-10">
@@ -40,10 +39,11 @@
                 <p class="name">Francis Duero</p>
 
                 <div class="user-input">
-                    <label for="scale">How extreme are you?</label>
-                    <input id="scale" type="range" class="slider" name="scale" min="0" max="2">
+                    <label id="xtrStatus" for="scale">How extreme are you? Semi</label>
 
-                    <button type="button" class="btn main-btn">Randomice</button>
+                    <input id="scale" type="range" class="slider" name="scale" min="0" max="2" onchange="setExtremeValue(this.value)">
+
+                    <button type="button" class="btn main-btn" onclick="moveToEvent()">Randomice</button>
                 </div>
 
             </div>
