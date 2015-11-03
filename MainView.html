@@ -13,83 +13,86 @@
     <script src="scripts/random.js"></script>
 </head>
 <body>
-    <div class="col-xs-10">
-        <div class="display">
-            <div class="menubar">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img class="brand" src="images/mousehead.png" alt=""/>
-                        Randomice
-                    </div>
-                    <div class="col-xs-6 right">
-                        <button class="btn menu-btn" onclick="hamburgerShow()">&#9776;</button>
-                    </div>
-
+<div class="col-xs-10">
+    <div class="display">
+        <div class="menubar">
+            <div class="row">
+                <div class="col-xs-6">
+                    <img class="brand" src="images/mousehead.png" alt=""/>
+                    Randomice
                 </div>
-            </div>
-
-            <div class="cover">
-                <div class="cover_image"></div>
-
-                <div class="profile_image"></div>
-            </div>
-
-            <div class="main-body">
-                <div class="dark_layer"></div>
-                <p class="name">Francis Duero</p>
-
-                <div class="user-input">
-                    <label id="xtrStatus" for="scale">How extreme are you? Semi</label>
-
-                    <input id="scale" type="range" class="slider" name="scale" min="0" max="2" onchange="setExtremeValue(this.value)">
-
-                    <button type="button" class="btn main-btn" onclick="moveToEvent()">
-                        <img class="buttonMouse" src="images/mousehead.png" alt="" >
-                    </button>
+                <div class="col-xs-6 right">
+                    <button class="btn menu-btn" onclick="hamburgerShow()">&#9776;</button>
                 </div>
 
             </div>
         </div>
-    </div>
-    <div class="col-xs-2">
-        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="hamburgerMenu" style="display:none">
-            <div class="shortMenu">
-                <div class="blockMenu">
-                    <p class="blockName">Options</p>
-                    <button id="onMenuButton" class="btn menu-btn" onclick="hamburgerShow()">&#9776;</button>
-                </div>
-                <div class="blockMenu">
-                    <p class="blockName">Walk</p>
-                    <div class="checkboxOne">
-                        <input type="checkbox" value="1" id="checkboxOneInput" class="check" name="" />
-                        <label for="checkboxOneInput"></label>
-                    </div>
-                </div>
+
+        <div class="cover">
+            <div class="cover_image"></div>
+
+            <div class="profile_image"></div>
+        </div>
+
+        <div class="main-body">
+            <div class="dark_layer"></div>
+            <p class="name">Francis Duero</p>
+
+            <div class="user-input">
+                <label id="xtrStatus" for="scale">How extreme are you? Semi</label>
+
+                <input id="scale" type="range" class="slider" name="scale" min="0" max="2"
+                       onchange="setExtremeValue(this.value)">
+
+                <button type="button" class="btn main-btn" onclick="moveToEvent()">
+                    <img class="buttonMouse" src="images/mousehead.png" alt="">
+                </button>
             </div>
-            <div class="blockMenu">Drive
+
+        </div>
+    </div>
+</div>
+<div class="col-xs-2">
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="hamburgerMenu" style="display:none">
+        <div class="shortMenu">
+            <div class="blockMenu">
+                <p class="blockName">Options</p>
+                <button id="onMenuButton" class="btn menu-btn" onclick="hamburgerShow()">&#9776;</button>
+            </div>
+            <div class="blockMenu">
+                <p class="blockName">Walk</p>
+
                 <div class="checkboxOne">
-                    <input type="checkbox" value="1" id="checkboxOneInput2" class="check" name="" />
-                    <label for="checkboxOneInput2"></label>
+                    <input type="checkbox" value="1" id="checkboxOneInput" class="check" name=""/>
+                    <label for="checkboxOneInput"></label>
                 </div>
             </div>
-            <div class="blockMenu">Date
-                <input type="date" class="hamburgerDate" name="date">
-                <input type="date" class="hamburgerDate" name="date">
+        </div>
+        <div class="blockMenu">Drive
+            <div class="checkboxOne">
+                <input type="checkbox" value="1" id="checkboxOneInput2" class="check" name=""/>
+                <label for="checkboxOneInput2"></label>
             </div>
-            <div class="blockMenu">Price
-                <p>
-                    <label for="amount">Price range:</label>
-                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                </p>
-                <div id="slider-range"></div>
-                <!--<section class="range-slider">
-                    <span class="rangeValues"></span>
-                    <input class="rangeMenu" value="0" min="0" max="10000" step="500" type="range">
-                    <input class="rangeMenu" value="10000" min="0" max="10000" step="500" type="range">
-                </section>-->
-                <!--Rest of code is here->  http://stackoverflow.com/questions/4753946/html5-form-slider-with-two-inputs-possible -->
-            </div>
-        </nav>
-    </div>
+        </div>
+        <div class="blockMenu">Date
+            <input type="date" class="hamburgerDate" name="date">
+            <input type="date" class="hamburgerDate" name="date">
+        </div>
+        <div class="blockMenu">Price
+            <p>
+                <label for="amount">Price range:</label>
+                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            </p>
+
+            <div id="slider-range"></div>
+            <!--<section class="range-slider">
+                <span class="rangeValues"></span>
+                <input class="rangeMenu" value="0" min="0" max="10000" step="500" type="range">
+                <input class="rangeMenu" value="10000" min="0" max="10000" step="500" type="range">
+            </section>-->
+            <!--Rest of code is here->  http://stackoverflow.com/questions/4753946/html5-form-slider-with-two-inputs-possible -->
+        </div>
+    </nav>
+</div>
 </body>
 </html>
