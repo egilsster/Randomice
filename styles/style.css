@@ -6,10 +6,14 @@ body {
     font-weight: 300;
 }
 
-.col-xs-2 {
-    position: relative;
-    /*right: 27.9em; right to the main view*/
-    right: 41.7em;
+.hammy-menu {
+    position: absolute;
+    top: 0;
+    width: 375px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .display {
@@ -136,8 +140,6 @@ body {
 .main-btn .buttonMouse {
     height: 5.1em;
 }
-
-/*# sourceMappingURL=style.css.map */
 
 input[type=range] {
     -webkit-appearance: none;

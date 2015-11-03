@@ -25,37 +25,35 @@ function setExtremeValue(value) {
 function moveToEvent() {
     let rnd = Math.floor(Math.random() * 3);
 
-    // TODO: Random in each case.
-
     $('.buttonMouse').addClass("rotated");
 
     setTimeout(() => {
         switch (xtrValue) {
             case 0:
                 if (rnd === 0 || rnd === 1) {
-                    location.href = "BowlingView.html";
+                    location.href = "../views/BowlingView.html";
                 } else if (rnd === 2) {
-                    location.href = "SwimmingView.html";
+                    location.href = "../views/SwimmingView.html";
                 }
                 break;
             case 1:
                 if (rnd === 0) {
-                    location.href = "GoKartView.html";
+                    location.href = "../views/GoKartView.html";
                 } else if (rnd === 1) {
-                    location.href = "LasertagView.html";
+                    location.href = "../views/LaserTagView.html";
                 } else if (rnd === 2) {
-                    location.href = "PaintballView.html";
+                    location.href = "../views/PaintBallView.html";
                 }
                 break;
             case 2:
                 if (rnd === 0 || rnd === 1) {
-                    location.href = "ParaglidingView.html";
+                    location.href = "../views/ParaglidingView.html";
                 } else if (rnd === 2) {
-                    location.href = "RiverView.html";
+                    location.href = "../views/RiverView.html";
                 }
                 break;
             default:
-                location.href = "login.html";
+                location.href = "../views/login.html";
         }
     }, 2000)
 }
