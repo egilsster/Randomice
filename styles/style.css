@@ -82,6 +82,13 @@ body {
   font-weight: 500;
   font-size: 12pt; }
 
+.text {
+  margin-left: 7em;
+  margin-right: 7em;
+  padding-top: 0.313em;
+  font-weight: 500;
+  font-size: 8pt; }
+
 .user-input {
   width: 60%;
   margin-top: 20%;
