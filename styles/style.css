@@ -79,20 +79,25 @@ body {
     border-bottom: 2px solid #8700ff;
 }
 
-<<<<<<< HEAD
+.swimming_image {
+    background: url("../images/sund.JPG") no-repeat;
+    background-size: cover;
+    height: 220px;
+    border-bottom: 2px solid #8700ff;
+}
+
 .lasertag_image {
   background-size: cover;
   background: url("../images/lasertag.jpg") no-repeat;
   height: 220px;
   border-bottom: 2px solid #8700ff; }
-=======
+
 .bowling_image {
     background: url("../images/bowling_background.jpg") no-repeat;
     background-size: cover;
     height: 220px;
     border-bottom: 2px solid #8700ff;
 }
->>>>>>> b1267e06ce755022631f8eb0814b0da893e85b59
 
 .main-body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
