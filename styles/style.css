@@ -1,185 +1,221 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300|Roboto:700,400);
 @import url(https://fonts.googleapis.com/css?family=Exo:400,100,500,700);
-body {
-  font-family: "Exo", sans-serif;
-  font-weight: 300;  }
 
-.col-xs-2{
- position:relative;
- /*right: 27.9em; right to the main view*/
-  right: 41.7em;}
+body {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+}
+
+.col-xs-2 {
+    position: relative;
+    /*right: 27.9em; right to the main view*/
+    right: 41.7em;
+}
 
 .display {
-  width: 375px;
-  height: 667px;
-  border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  color: white}
+    width: 375px;
+    height: 667px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    color: white
+}
 
 .row {
-  padding: 10px; }
+    padding: 10px;
+}
 
 .col-xs-6 {
-  font-size: 16pt;
-  font-weight: 700; }
+    font-size: 16pt;
+    font-weight: 700;
+}
 
 .menubar {
-  background-color: #9D0FE6;
-  color: white;
-  height: 55px; }
+    background-color: #9D0FE6;
+    color: white;
+    height: 55px;
+}
 
 .right {
-  text-align: right; }
+    text-align: right;
+}
 
 .brand {
-  width: 1.5em;}
+    width: 1.5em;
+}
 
 .cover_image {
-  background-image: url("../images/cover.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    border-bottom: 2px solid #8700ff;
+}
 
 .profile_image {
-  background-image: url("../images/person.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 6em;
-  width: 6em;
-  border: 2px solid #8700ff;
-  border-radius: 50%;
-  margin-left: 1.25em;
-  margin-top: -2.5em;
-  position: absolute; }
+    background-image: url("../images/person.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 6em;
+    width: 6em;
+    border: 2px solid #8700ff;
+    border-radius: 50%;
+    margin-left: 1.25em;
+    margin-top: -2.5em;
+    position: absolute;
+}
 
 .river_image {
-  background-size: cover;
-  background: url("../images/River_m.jpg") no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }
+    background: url("../images/River_m.jpg") no-repeat;
+    background-size: cover;
+    height: 220px;
+    border-bottom: 2px solid #8700ff;
+}
 
 .paragliding_image {
-  background-size: cover;
-  background: url("../images/pg_skogarfoss.JPG") no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }
+    background: url("../images/pg_skogarfoss.JPG") no-repeat;
+    background-size: cover;
+    height: 220px;
+    border-bottom: 2px solid #8700ff;
+}
 
-.swimming_image {
-  background-size: cover;
-  background: url("../images/sund.jpg") no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }
-
+.bowling_image {
+    background: url("../images/bowling_background.jpg") no-repeat;
+    background-size: cover;
+    height: 220px;
+    border-bottom: 2px solid #8700ff;
+}
 
 .main-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 392px;
-  color: white; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 392px;
+    color: white;
+}
+
+.event-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 392px;
+    color: white;
+}
 
 .dark_layer {
-  background-color: #434343; }
+    background-color: #434343;
+}
 
 .name {
-  margin-left: 7em;
-  padding-top: 0.313em;
-  font-weight: 500;
-  font-size: 12pt; }
+    margin-left: 7em;
+    padding-top: 0.313em;
+    font-weight: 500;
+    font-size: 12pt;
+}
 
 .text {
-  margin-left: 7em;
-  margin-right: 7em;
-  padding-top: 0.313em;
-  font-weight: 500;
-  font-size: 10pt; }
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 0.313em;
+    font-weight: 500;
+    font-size: 8pt;
+}
 
 .user-input {
-  width: 60%;
-  margin-top: 20%;
-  margin-left: auto;
-  margin-right: auto; }
+    width: 60%;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .slider {
-  margin-bottom: 70px; }
+    margin-bottom: 70px;
+}
 
 .menu-btn {
-  background-color: #9D0FE6;
-  font-size: 20pt;
-  padding: 0;
-  margin-top: -3px; }
+    background-color: #9D0FE6;
+    font-size: 20pt;
+    padding: 0;
+    margin-top: -3px;
+}
 
 .main-btn {
-  background-color: #9D0FE6;
-  color: white;
-  font-size: 24pt;
-  margin: 0 auto;
-  height: 5em;
-  width: 100%;  }
+    background-color: #9D0FE6;
+    color: white;
+    font-size: 24pt;
+    margin: 0 auto;
+    height: 5em;
+    width: 100%;
+}
 
 .main-btn .buttonMouse {
-  height: 5.1em;  }
+    height: 5.1em;
+}
 
 /*# sourceMappingURL=style.css.map */
 
 input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  margin: 1.5em 0;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 1.5em 0;
 }
+
 input[type=range]:focus {
-  outline: none;
+    outline: none;
 }
+
 input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 11.7px;
-  cursor: pointer;
-  box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
-  border-radius: 1.3px;
-  border: 1.9px solid rgba(0, 1, 1, 0.89);
+    width: 100%;
+    height: 11.7px;
+    cursor: pointer;
+    box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
+    border-radius: 1.3px;
+    border: 1.9px solid rgba(0, 1, 1, 0.89);
 }
 
 #scale {
-  background: #9d0fe6;
+    background: #9d0fe6;
 }
 
-#scale::-webkit-slider-thumb{
-  background: #9d0fe6;
+#scale::-webkit-slider-thumb {
+    background: #9d0fe6;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
-  border: 1px solid #000000;
-  height: 26px;
-  width: 33px;
-  border-radius: 3px;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -9.05px;
+    box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
+    border: 1px solid #000000;
+    height: 26px;
+    width: 33px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9.05px;
 }
+
 #scale:focus::-webkit-slider-runnable-track {
-  background: #a91ef0;
+    background: #a91ef0;
 }
+
 input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 11.7px;
-  cursor: pointer;
-  box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
-  background: #9d0fe6;
-  border-radius: 1.3px;
-  border: 1.9px solid rgba(0, 1, 1, 0.89);
+    width: 100%;
+    height: 11.7px;
+    cursor: pointer;
+    box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
+    background: #9d0fe6;
+    border-radius: 1.3px;
+    border: 1.9px solid rgba(0, 1, 1, 0.89);
 }
+
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
-  border: 1px solid #000000;
-  height: 26px;
-  width: 33px;
-  border-radius: 3px;
-  background: #9d0fe6;
-  cursor: pointer;
+    box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
+    border: 1px solid #000000;
+    height: 26px;
+    width: 33px;
+    border-radius: 3px;
+    background: #9d0fe6;
+    cursor: pointer;
 }
+
 /*input[type=range]::-ms-track {
   width: 100%;
   height: 11.7px;
@@ -217,16 +253,18 @@ input[type=range]:focus::-ms-fill-upper {
   background: #a91ef0;
 }*/
 
-.loading-background{
-  background: #9d0fe6;
-  height: inherit;
+.loading-background {
+    background: #9d0fe6;
+    height: inherit;
 }
-h2{
-  margin: auto;
-  text-align: center;
-  padding-top: 1em;
+
+h2 {
+    margin: auto;
+    text-align: center;
+    padding-top: 1em;
 }
-.loading-image{
-  margin-left: 124px;
-  margin-top: 181px;
+
+.loading-image {
+    margin-left: 124px;
+    margin-top: 181px;
 }
