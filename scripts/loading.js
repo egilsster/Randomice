@@ -18,7 +18,7 @@ function rotateAnimation(el, speed) {
     degrees++;
 
     if (degrees > 359) {
-        location.href = "login.html";
+        location.href = "Login.html";
     }
 
     if (degrees < 301) {

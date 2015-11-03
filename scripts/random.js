@@ -53,7 +53,7 @@ function moveToEvent() {
                 }
                 break;
             default:
-                location.href = "../views/login.html";
+                location.href = "../views/Login.html";
         }
     }, 2000)
 }
