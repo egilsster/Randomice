@@ -39,7 +39,13 @@ function moveToEvent() {
                 }
                 break;
             case 1:
-                location.href = "login.html";
+                if (rnd === 0) {
+                    location.href = "GoKartView.html";
+                } else if (rnd === 1) {
+                    location.href = "LasertagView.html";
+                } else if (rnd === 2) {
+                    location.href = "PaintballView.html";
+                }
                 break;
             case 2:
                 if (rnd === 0 || rnd === 1) {
@@ -47,13 +53,9 @@ function moveToEvent() {
                 } else if (rnd === 2) {
                     location.href = "RiverView.html";
                 }
-
                 break;
             default:
                 location.href = "login.html";
-            // Same as 2
         }
-    }, 2000);
-
-
+    }, 2000)
 }
