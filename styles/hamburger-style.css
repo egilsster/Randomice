@@ -1,7 +1,3 @@
-.hammy-menu .item-title {
-    font-weight: 200;
-}
-
 .blockMenu p {
     vertical-align: middle;
     margin: 0;
@@ -10,10 +6,6 @@
 .datepicker {
     left: -90px;
     font-weight: 200;
-}
-
-input[type=checkbox] {
-    visibility: hidden;
 }
 
 /**
@@ -26,6 +18,17 @@ input[type=checkbox] {
     margin: 20px 80px;
     position: relative;
     border-radius: 3px;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+/**
+ * Move the slider in the correct position if the checkbox is clicked
+ */
+.checkboxOne input[type=checkbox]:checked + label {
+    left: 27px;
 }
 
 /**
@@ -50,13 +53,6 @@ input[type=checkbox] {
     background: white;
 }
 
-/**
- * Move the slider in the correct position if the checkbox is clicked
- */
-.checkboxOne input[type=checkbox]:checked + label {
-    left: 27px;
-}
-
 /*******menu-date******************************************/
 
 input[type=date] {
@@ -69,8 +65,14 @@ input[type=date] {
 /*******the menu******************************/
 
 .hammy-menu {
+    display: block;
     font-family: "Exo", sans-serif;
     background-color: #9D0FE6;
+    top: -375px;
+}
+
+.hammy-menu .item-title {
+    font-weight: 200;
 }
 
 .blockMenu {
@@ -87,4 +89,28 @@ input[type=date] {
 
 .hammy-menu .blockMenu .checkboxOne {
     display: inline-block;
+}
+
+/******** animations *********/
+
+.onScreen {
+    animation: menuAnimation 1s forwards;
+    -webkit-animation: menuAnimation 1s forwards;
+}
+
+.offScreen {
+    animation: menuAnimation 1s reverse;
+    -webkit-animation: menuAnimation 1s reverse;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes menuAnimation {
+    0%   { left:0px; top:-375px; }
+    100% { left:0px; top:0px; }
+}
+
+/* Standard syntax */
+@keyframes menuAnimation {
+    0%   { left:0px; top:-375px; }
+    100% { left:0px; top:0px; }
 }

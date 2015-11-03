@@ -24,12 +24,18 @@ var hamburgerMenu = document.getElementById('hamburgerMenu');
 
 function hamburgerShow() {
     let menu = document.getElementById('hamburgerMenu');
+    let jmenu =  $('#hamburgerMenu');
+    let visible = jmenu.hasClass("onScreen");
 
-    if (menu.style.display == "none") {
+    if (!visible) {
         menu.style.display = "block";
+        jmenu.addClass("onScreen");
+        jmenu.removeClass("offScreen");
     } else {
-        menu.style.display = "none";
+        jmenu.addClass("offScreen");
+        jmenu.removeClass("onScreen");
     }
+    console.log();
 }
 
 function showValue(newValue) {
