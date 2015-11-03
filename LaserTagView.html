@@ -7,6 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css"/>
+    <script src="scripts/jquery-2.1.4.js"></script>
 </head>
 <body>
 <div class="display">
@@ -23,10 +24,10 @@
     </div>
 
     <div class="cover">
-        <div class="lasertag_image"></div>
+        <div class="cover_image"></div>
     </div>
 
-    <div class="main-body">
+    <div class="event-body">
         <div class="dark_layer"></div>
         <p class="name">LASERTAG</p>
 
@@ -38,6 +39,12 @@
         </div>
 
     </div>
+
+    <script>
+        $('.cover_image').css('background', 'url(images/lasertag_cover.jpg) no-repeat');
+        $('.cover_image').css('background-size', 'cover');
+        $('.event-body').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/lasertag_background.jpg)');
+    </script>
 </div>
 </body>
 </html>

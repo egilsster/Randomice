@@ -7,6 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css"/>
+    <script src="scripts/jquery-2.1.4.js"></script>
 </head>
 <body>
 <div class="display">
@@ -16,17 +17,14 @@
                 <img class="brand" src="images/mouse.png" alt=""/>
                 Randomice
             </div>
-            <div class="col-xs-6 right">
-                <button class="btn menu-btn">&#9776;</button>
-            </div>
         </div>
     </div>
 
     <div class="cover">
-        <div class="swimming_image"></div>
+        <div class="cover_image"></div>
     </div>
 
-    <div class="main-body">
+    <div class="event-body">
         <div class="dark_layer"></div>
         <p class="name">SWIMMING</p>
         <p class="text">Go swimming or chill in the hot tub! Or do both!
@@ -37,6 +35,11 @@
         </div>
 
     </div>
+    <script>
+        $('.cover_image').css('background', 'url(images/sund.jpg) no-repeat');
+        $('.cover_image').css('background-size', 'cover');
+        $('.event-body').css('background-image','linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/swimming_cover.jpg)');
+    </script>
 </div>
 </body>
 </html>

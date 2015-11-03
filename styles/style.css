@@ -65,47 +65,7 @@ body {
     position: absolute;
 }
 
-.river_image {
-    background: url("../images/River_m.jpg") no-repeat;
-    background-size: cover;
-    height: 220px;
-    border-bottom: 2px solid #8700ff;
-}
-
-.paragliding_image {
-    background: url("../images/pg_skogarfoss.JPG") no-repeat;
-    background-size: cover;
-    height: 220px;
-    border-bottom: 2px solid #8700ff;
-}
-
-.swimming_image {
-    background: url("../images/sund.JPG") no-repeat;
-    background-size: cover;
-    height: 220px;
-    border-bottom: 2px solid #8700ff;
-}
-
-.lasertag_image {
-  background-size: cover;
-  background: url("../images/lasertag.jpg") no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }
-
-.paintball_image {
-  background-size: cover;
-  background: url("../images/paintball.jpg") no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }  
-
-.gokart_image {
-  background-size: cover;
-  background: url("../images/gokart.jpg") no-repeat;
-  height: 220px;
-  border-bottom: 2px solid #8700ff; }  
-
-.bowling_image {
-    background: url("../images/bowling_background.jpg") no-repeat;
+.cover_image {
     background-size: cover;
     height: 220px;
     border-bottom: 2px solid #8700ff;
@@ -292,4 +252,56 @@ h2 {
 .loading-image {
     margin-left: 124px;
     margin-top: 181px;
+}
+
+.rotated {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1500ms;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1500ms;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1500ms;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
