@@ -2,7 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:400,100,500,700);
 body {
   font-family: "Exo", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;  }
+
+.col-xs-2{
+ position:relative;
+ /*right: 27.9em; right to the main view*/
+  right: 41.7em;}
 
 .display {
   width: 375px;
@@ -102,22 +107,29 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 11.7px;
   cursor: pointer;
   box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
-  background: #9d0fe6;
   border-radius: 1.3px;
   border: 1.9px solid rgba(0, 1, 1, 0.89);
 }
+
+#scale {
+  background: #9d0fe6;
+}
+
+#scale::-webkit-slider-thumb{
+  background: #9d0fe6;
+}
+
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
   border: 1px solid #000000;
   height: 26px;
   width: 33px;
   border-radius: 3px;
-  background: #9d0fe6;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -9.05px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
+#scale:focus::-webkit-slider-runnable-track {
   background: #a91ef0;
 }
 input[type=range]::-moz-range-track {
@@ -138,7 +150,7 @@ input[type=range]::-moz-range-thumb {
   background: #9d0fe6;
   cursor: pointer;
 }
-input[type=range]::-ms-track {
+/*input[type=range]::-ms-track {
   width: 100%;
   height: 11.7px;
   cursor: pointer;
@@ -173,7 +185,7 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #a91ef0;
-}
+}*/
 
 .loading-background{
   background: #9d0fe6;
