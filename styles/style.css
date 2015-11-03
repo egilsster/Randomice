@@ -72,6 +72,11 @@ body {
   height: 220px;
   border-bottom: 2px solid #8700ff; }
 
+.lasertag_image {
+  background-size: cover;
+  background: url("../images/lasertag.jpg") no-repeat;
+  height: 220px;
+  border-bottom: 2px solid #8700ff; }
 
 .main-body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
