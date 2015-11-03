@@ -80,6 +80,7 @@ body {
 }
 
 .event-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 392px;
