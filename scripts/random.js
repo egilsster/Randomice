@@ -27,23 +27,33 @@ function moveToEvent() {
 
     // TODO: Random in each case.
 
-    switch (xtrValue) {
-        case 0:
-            location.href = "login.html";
-            break;
-        case 1:
-            location.href = "login.html";
-            break;
-        case 2:
-            if (rnd === 0 || rnd === 1) {
-                location.href = "ParaglidingView.html";
-            } else if (rnd === 2) {
-                location.href = "RiverView.html";
-            }
+    $('.buttonMouse').addClass("rotated");
 
-            break;
-        default:
-            location.href = "login.html";
-        // Same as 2
-    }
+    setTimeout(() => {
+        switch (xtrValue) {
+            case 0:
+                if (rnd === 0 || rnd === 1) {
+                    location.href = "BowlingView.html";
+                } else if (rnd === 2) {
+                    location.href = "SwimmingView.html";
+                }
+                break;
+            case 1:
+                location.href = "login.html";
+                break;
+            case 2:
+                if (rnd === 0 || rnd === 1) {
+                    location.href = "ParaglidingView.html";
+                } else if (rnd === 2) {
+                    location.href = "RiverView.html";
+                }
+
+                break;
+            default:
+                location.href = "login.html";
+            // Same as 2
+        }
+    }, 2000);
+
+
 }
