@@ -133,12 +133,11 @@ body {
     color: white;
     font-size: 24pt;
     margin: 0 auto;
-    height: 5em;
     width: 100%;
 }
 
 .main-btn .buttonMouse {
-    height: 5.1em;
+    height: 150px;
 }
 
 input[type=range] {

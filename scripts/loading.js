@@ -22,7 +22,7 @@ function rotateAnimation(el, speed) {
     }
 
     if (degrees < 301) {
-        let n = parseInt(degrees / 3);
+        var n = parseInt(degrees / 3);
         document.getElementById("status").innerHTML = "Loading(" + n + "%)";
     }
 }
