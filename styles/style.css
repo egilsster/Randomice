@@ -169,7 +169,6 @@ input[type=range]::-webkit-slider-runnable-track {
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0 0 1px #0d0d0d;
     border-radius: 1px;
-    border: 2px solid rgba(0, 1, 1, 0.89);
 }
 
 #scale {

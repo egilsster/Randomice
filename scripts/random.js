@@ -1,21 +1,30 @@
 'use strict';
 
+
+const xtrText = "How extreme are you? ";
+
 var xtrValue = 1;
 
+var defaultStatus = "Semi";
+document.getElementById("xtrStatus").innerHTML = xtrText + defaultStatus;
+
 function setExtremeValue(value) {
-    let xtrText = "How extreme are you? ";
+    let button = $('.buttonMouse');
     let xtrStatus = "";
     xtrValue = parseInt(value);
 
     switch (xtrValue) {
         case 0:
             xtrStatus = "Mellow";
+            button.attr("src", "../images/bathmousehead.png");
             break;
         case 1:
             xtrStatus = "Semi";
+            button.attr("src", "../images/cowboymousehead.png");
             break;
         case 2:
             xtrStatus = "Very";
+            button.attr("src", "../images/spacemousehead.png");
             break;
     }
 
