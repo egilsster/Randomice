@@ -112,6 +112,7 @@ section.range-slider input {
     margin: 0;
     padding: 0;
 }
+
 section.range-slider input::-webkit-slider-thumb {
     pointer-events: all;
     position: relative;
@@ -132,13 +133,19 @@ section.range-slider input::-moz-range-track {
     background-color: rgba(0, 0, 0, 1);
     border: 0;
 }
+
 section.range-slider input:last-of-type::-moz-range-track {
     -moz-appearance: none;
     background: none transparent;
     border: 0;
 }
+
 section.range-slider input[type=range]::-moz-focus-outer {
     border: 0;
+}
+
+.range-slider > .rangeValues {
+    font-weight: 200;
 }
 
 /******** animations *********/

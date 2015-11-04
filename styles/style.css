@@ -118,7 +118,7 @@ body {
 .user-input {
     width: 60%;
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -239,6 +239,13 @@ h2 {
     animation-duration: 1500ms;
     animation-timing-function: ease;
 }
+
+.lol {
+    -webkit-animation: spin 1500ms alternate infinite;
+    -moz-animation: spin 1500ms alternate infinite;
+    animation: spin 1500ms alternate infinite;
+}
+
 
 @-moz-keyframes spin {
     from {
