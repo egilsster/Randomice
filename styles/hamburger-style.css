@@ -29,6 +29,7 @@ input[type=checkbox] {
  */
 .checkboxOne input[type=checkbox]:checked + label {
     left: 27px;
+    background: limegreen;
 }
 
 /**
