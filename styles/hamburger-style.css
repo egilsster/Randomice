@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.datepicker {
+.datePicker {
     left: -90px;
     font-weight: 200;
 }
@@ -64,14 +64,13 @@ input[type=date] {
 
 /*******the menu******************************/
 
-.hammy-menu {
+.hamburger-menu {
     display: block;
     font-family: "Exo", sans-serif;
     background-color: #9D0FE6;
-    top: -375px;
 }
 
-.hammy-menu .item-title {
+.hamburger-menu .item-title {
     font-weight: 200;
 }
 
@@ -83,34 +82,31 @@ input[type=date] {
     border: 0.1em solid black;
 }
 
-.hammy-menu .blockMenu .blockName {
+.hamburger-menu .blockMenu .blockName {
     display: inline-block;
 }
 
-.hammy-menu .blockMenu .checkboxOne {
+.hamburger-menu .blockMenu .checkboxOne {
     display: inline-block;
 }
 
 /******** animations *********/
 
 .onScreen {
-    animation: menuAnimation 1s forwards;
-    -webkit-animation: menuAnimation 1s forwards;
+    max-height: 400px;
+
+    -webkit-transition: max-height 500ms ease;
+    -moz-transition: max-height 500ms ease;
+    -o-transition: max-height 500ms ease;
+    transition: max-height 500ms ease;
 }
 
 .offScreen {
-    animation: menuAnimation 1s reverse;
-    -webkit-animation: menuAnimation 1s reverse;
-}
+    overflow: hidden;
+    max-height: 0;
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes menuAnimation {
-    0%   { left:0px; top:-375px; }
-    100% { left:0px; top:0px; }
-}
-
-/* Standard syntax */
-@keyframes menuAnimation {
-    0%   { left:0px; top:-375px; }
-    100% { left:0px; top:0px; }
+    -webkit-transition: max-height 500ms ease;
+    -moz-transition: max-height 500ms ease;
+    -o-transition: max-height 500ms ease;
+    transition: max-height 500ms ease;
 }

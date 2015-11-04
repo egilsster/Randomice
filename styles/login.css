@@ -27,8 +27,7 @@ button#facebook {
 
 button#twitter {
     border-color: #007aa6;
-    background-color: #008cbf;
-    background-image: url(https://twitter.com/images/resources/twitter-bird-white-on-blue.png);
+    background: #008cbf url(https://twitter.com/images/resources/twitter-bird-white-on-blue.png);
 }
 
 button#googleplus {
@@ -45,12 +44,10 @@ div.social-wrap button:active {
 div.social-wrap.b button {
     padding-right: 45px;
     height: 35px;
-    background: none;
     border: none;
     display: block;
+    background: none no-repeat, repeat 170px center, center center;
     background-size: 25px 25px, cover;
-    background-position: 170px center, center center;
-    background-repeat: no-repeat, repeat;
     border-radius: 4px;
     color: white;
     font-family: "Merriweather Sans", sans-serif;
@@ -70,10 +67,8 @@ div.social-wrap.b > .googleplus {
 }
 
 div.social-wrap.b > .facebook {
-    background: url(http://dl.dropbox.com/u/109135764/facebookf.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
+    background: url(http://dl.dropbox.com/u/109135764/facebookf.png) no-repeat, repeat 170px center, center center;
     background-size: 25px 25px, cover;
-    background-position: 170px center, center center;
-    background-repeat: no-repeat, repeat;
 }
 
 div.social-wrap.b > .twitter {
@@ -83,21 +78,19 @@ div.social-wrap.b > .twitter {
 div.social-wrap.b button em {
     font-size: 18px;
     letter-spacing: 1px;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     margin-right: 4px;
     margin-left: 4px;
 }
 
 div.social-wrap.c button {
     padding-left: 35px;
-    padding-right: 0px;
+    padding-right: 0;
     height: 35px;
-    background: none;
     border: none;
     display: block;
+    background: none no-repeat, repeat 10px center, center center;
     background-size: 25px 25px, cover;
-    background-position: 10px center, center center;
-    background-repeat: no-repeat, repeat;
     border-radius: 4px;
     color: white;
     font-family: "Merriweather Sans", sans-serif;
@@ -108,36 +101,27 @@ div.social-wrap.c button {
     border-right: 1px solid transparent;
 }
 
-div.social-wrap.c {
-}
-
 div.social-wrap.c > .googleplus {
     background-size: 30px 30px, cover;
     background-image: url(http://dl.dropbox.com/u/109135764/gplus.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #353233), color-stop(100%, #1d1b1c));;
 }
 
 div.social-wrap.c > .facebook {
-    background: url(http://dl.dropbox.com/u/109135764/facebookf.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c74c4), color-stop(100%, #3b5998));
+    background: url(http://dl.dropbox.com/u/109135764/facebookf.png) no-repeat, repeat 10px center, center center;
     background-size: 25px 25px, cover;
-    background-position: 10px center, center center;
-    background-repeat: no-repeat, repeat;
-}
-
-div.social-wrap.c > .twitter {
-    background-image: url(http://dl.dropbox.com/u/109135764/twitterbird.png), -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aced), color-stop(99%, #00a9ff));;
 }
 
 div.social-wrap.c button em {
     font-size: 18px;
     letter-spacing: 1px;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     margin-right: 4px;
     margin-left: 4px;
 }
 
 ul.sm-wrap {
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
 }
 
 ul.sm-wrap li {
@@ -172,11 +156,9 @@ ul.sm-wrap a {
 }
 
 .login-image {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../images/adventure.jpg");
-    -webkit-background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../images/adventure.jpg") no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    -webkit-background-size: cover;
     height: 612px;
 }
 

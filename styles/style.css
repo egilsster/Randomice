@@ -6,14 +6,14 @@ body {
     font-weight: 300;
 }
 
-.hammy-menu {
+.hamburger-menu {
     position: absolute;
     top: 0;
     width: 375px;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .display {
@@ -49,17 +49,15 @@ body {
 }
 
 .cover_image {
-    background-image: url("../images/cover.jpg");
+    background: url("../images/cover.jpg") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 220px;
     border-bottom: 2px solid #8700ff;
 }
 
 .profile_image {
-    background-image: url("../images/person.jpg");
+    background: url("../images/person.jpg") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 6em;
     width: 6em;
     border: 2px solid #8700ff;
@@ -76,15 +74,13 @@ body {
 }
 
 .main-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 392px;
     color: white;
 }
 
 .event-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 392px;
@@ -152,11 +148,11 @@ input[type=range]:focus {
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 11.7px;
+    height: 12px;
     cursor: pointer;
-    box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
-    border-radius: 1.3px;
-    border: 1.9px solid rgba(0, 1, 1, 0.89);
+    box-shadow: 1px 1px 1px #000000, 0 0 1px #0d0d0d;
+    border-radius: 1px;
+    border: 2px solid rgba(0, 1, 1, 0.89);
 }
 
 #scale {
@@ -168,7 +164,6 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-webkit-slider-thumb {
-    box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
     border: 1px solid #000000;
     height: 26px;
     width: 33px;
@@ -184,16 +179,15 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 11.7px;
+    height: 12px;
     cursor: pointer;
-    box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
+    box-shadow: 1px 1px 1px #000000, 0 0 1px #0d0d0d;
     background: #9d0fe6;
-    border-radius: 1.3px;
-    border: 1.9px solid rgba(0, 1, 1, 0.89);
+    border-radius: 1px;
+    border: 1px solid #000000;
 }
 
 input[type=range]::-moz-range-thumb {
-    box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
     border: 1px solid #000000;
     height: 26px;
     width: 33px;
@@ -201,43 +195,6 @@ input[type=range]::-moz-range-thumb {
     background: #9d0fe6;
     cursor: pointer;
 }
-
-/*input[type=range]::-ms-track {
-  width: 100%;
-  height: 11.7px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #8d0dce;
-  border: 1.9px solid rgba(0, 1, 1, 0.89);
-  border-radius: 2.6px;
-  box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
-}
-input[type=range]::-ms-fill-upper {
-  background: #9d0fe6;
-  border: 1.9px solid rgba(0, 1, 1, 0.89);
-  border-radius: 2.6px;
-  box-shadow: 1.3px 1.3px 1px #000000, 0px 0px 1.3px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 0.4px 0.4px 0.3px rgba(0, 0, 0, 0.19), 0px 0px 0.4px rgba(13, 13, 13, 0.19);
-  border: 1px solid #000000;
-  height: 26px;
-  width: 33px;
-  border-radius: 3px;
-  background: #9d0fe6;
-  cursor: pointer;
-  height: 11.7px;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #9d0fe6;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #a91ef0;
-}*/
 
 .loading-background {
     background: #9d0fe6;
@@ -258,26 +215,13 @@ h2 {
 .rotated {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 1500ms;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: ease;
     -moz-animation-name: spin;
     -moz-animation-duration: 1500ms;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 1500ms;
-    -ms-animation-timing-function: linear;
-
+    -moz-animation-timing-function: ease;
     animation-name: spin;
     animation-duration: 1500ms;
-    animation-timing-function: linear;
-}
-
-@-ms-keyframes spin {
-    from {
-        -ms-transform: rotate(0deg);
-    }
-    to {
-        -ms-transform: rotate(360deg);
-    }
+    animation-timing-function: ease;
 }
 
 @-moz-keyframes spin {
@@ -285,7 +229,7 @@ h2 {
         -moz-transform: rotate(0deg);
     }
     to {
-        -moz-transform: rotate(360deg);
+        -moz-transform: rotate(720deg);
     }
 }
 
@@ -294,7 +238,7 @@ h2 {
         -webkit-transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(720deg);
     }
 }
 
@@ -303,6 +247,6 @@ h2 {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(720deg);
     }
 }

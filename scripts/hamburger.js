@@ -23,19 +23,16 @@ var hamburgerMenu = document.getElementById('hamburgerMenu');
 //});
 
 function hamburgerShow() {
-    let menu = document.getElementById('hamburgerMenu');
     let jmenu =  $('#hamburgerMenu');
     let visible = jmenu.hasClass("onScreen");
 
     if (!visible) {
-        menu.style.display = "block";
         jmenu.addClass("onScreen");
         jmenu.removeClass("offScreen");
     } else {
         jmenu.addClass("offScreen");
         jmenu.removeClass("onScreen");
     }
-    console.log();
 }
 
 function showValue(newValue) {
