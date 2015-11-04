@@ -91,6 +91,10 @@ input[type=date] {
     display: inline-block;
 }
 
+.rangeMenu {
+    background: #483652;
+}
+
 .hamburger-menu .rangeMenu::-webkit-slider-thumb {
     background-color: white;
 }
