@@ -1,3 +1,5 @@
+'use strict';
+
 var degrees = 0;
 function rotateAnimation(el, speed) {
     var elem = document.getElementById(el);
@@ -22,7 +24,7 @@ function rotateAnimation(el, speed) {
     }
 
     if (degrees < 301) {
-        var n = parseInt(degrees / 3);
+        let n = parseInt(degrees / 3);
         document.getElementById("status").innerHTML = "Loading(" + n + "%)";
     }
 }

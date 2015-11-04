@@ -62,9 +62,10 @@ body {
     width: 6em;
     border: 2px solid #8700ff;
     border-radius: 50%;
-    margin-left: 1.25em;
-    margin-top: -2.5em;
+    margin-left: 30px;
+    margin-top: -35px;
     position: absolute;
+    z-index: 1;
 }
 
 .cover_image {
@@ -78,13 +79,16 @@ body {
     background-size: cover;
     height: 392px;
     color: white;
+    position: relative;
 }
 
 .event-body {
+    padding: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 392px;
     color: white;
+    position: relative;
 }
 
 .dark_layer {
@@ -92,25 +96,33 @@ body {
 }
 
 .name {
-    margin-left: 7em;
-    padding-top: 0.313em;
+    text-align: center;
     font-weight: 500;
-    font-size: 12pt;
+    font-size: 16pt;
 }
 
 .text {
-    margin-left: 7em;
-    margin-right: 7em;
+    margin: 0 50px;
     padding-top: 0.313em;
     font-weight: 500;
     font-size: 8pt;
 }
 
-.user-input {
+.input-container {
     width: 60%;
     margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.user-input {
+    width: 60%;
+    position: absolute;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 .slider {
@@ -130,6 +142,11 @@ body {
     font-size: 24pt;
     margin: 0 auto;
     width: 100%;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
 }
 
 .main-btn .buttonMouse {

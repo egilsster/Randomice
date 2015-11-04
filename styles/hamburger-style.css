@@ -68,6 +68,7 @@ input[type=date] {
     display: block;
     font-family: "Exo", sans-serif;
     background-color: #9D0FE6;
+    z-index: 20;
 }
 
 .hamburger-menu .item-title {
@@ -95,18 +96,19 @@ input[type=date] {
 .onScreen {
     max-height: 400px;
 
-    -webkit-transition: max-height 500ms ease;
-    -moz-transition: max-height 500ms ease;
-    -o-transition: max-height 500ms ease;
-    transition: max-height 500ms ease;
+    -webkit-transition: max-height 100ms ease;
+    -moz-transition: max-height 100ms ease;
+    -o-transition: max-height 100ms ease;
+    transition: max-height 100ms ease;
+
 }
 
 .offScreen {
     overflow: hidden;
     max-height: 0;
 
-    -webkit-transition: max-height 500ms ease;
-    -moz-transition: max-height 500ms ease;
-    -o-transition: max-height 500ms ease;
-    transition: max-height 500ms ease;
+    -webkit-transition: max-height 100ms ease;
+    -moz-transition: max-height 100ms ease;
+    -o-transition: max-height 100ms ease;
+    transition: max-height 100ms ease;
 }

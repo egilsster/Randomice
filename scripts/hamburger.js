@@ -23,15 +23,15 @@ var hamburgerMenu = document.getElementById('hamburgerMenu');
 //});
 
 function hamburgerShow() {
-    let jmenu =  $('#hamburgerMenu');
-    let visible = jmenu.hasClass("onScreen");
+    let menu =  $('#hamburgerMenu');
+    let visible = menu.hasClass("onScreen");
 
     if (!visible) {
-        jmenu.addClass("onScreen");
-        jmenu.removeClass("offScreen");
+        menu.addClass("onScreen");
+        menu.removeClass("offScreen");
     } else {
-        jmenu.addClass("offScreen");
-        jmenu.removeClass("onScreen");
+        menu.addClass("offScreen");
+        menu.removeClass("onScreen");
     }
 }
 
