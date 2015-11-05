@@ -1,16 +1,11 @@
-'use strict';
-
-
-const xtrText = "How extreme are you? ";
-
+var xtrText = "How extreme are you? ";
 var xtrValue = 1;
-
 var defaultStatus = "Semi";
 document.getElementById("xtrStatus").innerHTML = xtrText + defaultStatus;
 
 function setExtremeValue(value) {
-    let button = $('.buttonMouse');
-    let xtrStatus = "";
+    var button = $('.buttonMouse');
+    var xtrStatus = "";
     xtrValue = parseInt(value);
 
     switch (xtrValue) {
@@ -32,11 +27,11 @@ function setExtremeValue(value) {
 }
 
 function moveToEvent() {
-    let rnd = Math.floor(Math.random() * 3);
+    var rnd = Math.floor(Math.random() * 3);
 
     $('.buttonMouse').addClass("rotated");
 
-    setTimeout(() => {
+    setTimeout(function() {
         switch (xtrValue) {
             case 0:
                 if (rnd === 0 || rnd === 1) {

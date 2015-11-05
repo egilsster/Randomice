@@ -1,5 +1,3 @@
-'use strict';
-
 var degrees = 0;
 function rotateAnimation(el, speed) {
     var elem = document.getElementById(el);

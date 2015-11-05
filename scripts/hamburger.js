@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Created by Petra on 29-Oct-15.
  */
@@ -39,8 +37,8 @@ window.onload = function () {
 };
 
 function hamburgerShow() {
-    let menu = $('#hamburgerMenu');
-    let visible = menu.hasClass("onScreen");
+    var menu = $('#hamburgerMenu');
+    var visible = menu.hasClass("onScreen");
 
     if (!visible) {
         menu.addClass("onScreen");
