@@ -156,10 +156,15 @@ ul.sm-wrap a {
 }
 
 .login-image {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../images/adventure.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("../images/plain.jpg") no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     height: 612px;
+}
+
+.outlines {
+    height: 200px;
+    margin: 0 auto;
 }
 
 .login-btn a, .login-btn:hover a, .login-btn:active a {
